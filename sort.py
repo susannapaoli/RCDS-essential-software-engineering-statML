@@ -1,6 +1,6 @@
 def pivot_sort(arr):
     """
-    Sorts an array in ascending order using pivot-based sorting (quicksort).
+    lalalala Sorts an array in ascending order using pivot-based sorting (quicksort).
     
     Args:
         arr: List of comparable elements quickly
