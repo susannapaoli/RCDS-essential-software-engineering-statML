@@ -1,12 +1,20 @@
 def pivot_sort(arr):
     """
-    Sorts an array in ascending order using pivot-based sorting (quicksort).
+    Sorts an array in ascending order using a pivot-based sorting algorithm (quicksort variant).
+    
+    This implementation uses the middle element as the pivot and partitions the array
+    into three parts: elements less than the pivot, equal to the pivot, and greater than
+    the pivot. The algorithm then recursively sorts the left and right partitions.
     
     Args:
-        arr: List of comparable elements quickly
+        arr (list): A list of comparable elements to be sorted.
         
     Returns:
-        Sorted list in ascending order nicely
+        list: A new sorted list in ascending order.
+        
+    Example:
+        >>> pivot_sort([5, 2, 8, 1, 9])
+        [1, 2, 5, 8, 9]
     """
     # Base case: arrays with 0 or 1 element are already sorted
     if len(arr) <= 1:
